@@ -11,3 +11,4 @@ jobs:
     steps:
       - name: Curl your Render app
         run: curl -s https://license-manager-f1ps.onrender.com/rest/api/check
+        
