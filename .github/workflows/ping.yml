@@ -2,8 +2,8 @@ name: Keep Render App Awake
 
 on:
   schedule:
-    - cron: "*/7 5-23 * * *" # every 13 minutes
-  workflow_dispatch:       # allow manual run
+    - cron: "0 5 * * *"  # 07:00 Europe/Rome, daily
+  workflow_dispatch:      # allow manual run
 
 jobs:
   ping:
@@ -11,4 +11,3 @@ jobs:
     steps:
       - name: Curl your Render app
         run: curl -s https://license-manager-f1ps.onrender.com/rest/api/check
-        
